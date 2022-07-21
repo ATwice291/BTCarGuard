@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BTCarGuard</string>
+    <string name="logoicon">logoIcon</string>
+    <string name="my_car_menuitem">My Car</string>
+    <string name="bluetooth_menuitem">Bluetooth</string>
+    <string name="about_menuitem">About</string>
+    <string name="title_my_car">My Car</string>
+    <string name="title_bluetooth">Bluetooth</string>
+    <string name="title_about">About</string>
+</resources>
