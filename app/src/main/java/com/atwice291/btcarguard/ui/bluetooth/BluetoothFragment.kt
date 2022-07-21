@@ -1,4 +1,4 @@
-package com.atwice291.btcarguard
+package com.atwice291.btcarguard.ui.bluetooth
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,25 +6,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.atwice291.btcarguard.R
 
-class MyCarFragment : Fragment() {
+class BluetoothFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MyCarFragment()
+        fun newInstance() = BluetoothFragment()
     }
 
-    private lateinit var viewModel: MyCarViewModel
+    private lateinit var viewModel: BluetoothViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_my_car, container, false)
+        return inflater.inflate(R.layout.fragment_bluetooth, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MyCarViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(BluetoothViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

@@ -1,4 +1,4 @@
-package com.atwice291.btcarguard
+package com.atwice291.btcarguard.ui.bluetooth
 
 import androidx.lifecycle.ViewModel
 

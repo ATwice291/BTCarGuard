@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/navigation_myCarFragment"
-        android:name="com.atwice291.btcarguard.MyCarFragment"
+        android:name="com.atwice291.btcarguard.ui.mycar.MyCarFragment"
         android:label="@string/title_my_car"
         tools:layout="@layout/fragment_my_car" />
     <fragment
         android:id="@+id/navigation_bluetoothFragment"
-        android:name="com.atwice291.btcarguard.BluetoothFragment"
+        android:name="com.atwice291.btcarguard.ui.bluetooth.BluetoothFragment"
         android:label="@string/title_bluetooth"
         tools:layout="@layout/fragment_bluetooth" />
     <fragment
         android:id="@+id/navigation_aboutFragment"
-        android:name="com.atwice291.btcarguard.AboutFragment"
+        android:name="com.atwice291.btcarguard.ui.about.AboutFragment"
         android:label="@string/title_about"
         tools:layout="@layout/fragment_about" />
 </navigation>
