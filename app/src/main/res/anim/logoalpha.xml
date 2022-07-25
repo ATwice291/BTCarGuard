@@ -4,15 +4,15 @@
     android:fillAfter="true"
     android:fillBefore="true">
     <alpha
-        android:duration="900"
+        android:duration="290"
         android:fromAlpha="0.0"
-        android:startOffset="100"
+        android:startOffset="10"
         android:toAlpha="1.0" >
     </alpha>
     <alpha
-        android:duration="900"
+        android:duration="290"
         android:fromAlpha="1.0"
-        android:startOffset="2100"
+        android:startOffset="510"
         android:toAlpha="0.0" >
     </alpha>
 </set>

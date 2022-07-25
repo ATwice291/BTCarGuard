@@ -62,6 +62,7 @@
             android:src="@drawable/signal0"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
@@ -90,19 +91,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Авто блокировка"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Switch
-                    android:id="@+id/switch3"
-                    android:layout_width="0dp"
+                    android:id="@+id/swAutoBlock"
+                    android:layout_width="72dp"
                     android:layout_height="48dp"
                     android:layout_marginEnd="20dp"
                     android:checked="true"
-                    android:scaleX="2"
-                    android:scaleY="2"
                     android:showText="false"
                     android:splitTrack="false"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -116,6 +115,55 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardAutoActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        app:contentPadding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="Порог срабатывания"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/sbAutoBlockLevel"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:max="5"
+                    android:progress="4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardManualActions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -136,26 +184,31 @@
                 android:layout_margin="10dp">
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/textView27"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Порог срабатывания"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:layout_height="0dp"
+                    android:text="Ручное управление"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <SeekBar
-                    android:id="@+id/seekBar2"
-                    style="@style/Widget.AppCompat.SeekBar.Discrete"
-                    android:layout_width="120dp"
+                <Button
+                    android:id="@+id/bManualUnblock"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:max="4"
-                    android:progress="4"
-                    android:scaleX="2"
-                    android:scaleY="2"
+                    android:text="Заблокировать"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/bManualBlock"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Разблокировать"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

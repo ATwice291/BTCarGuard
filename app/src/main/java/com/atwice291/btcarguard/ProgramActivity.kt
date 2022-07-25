@@ -1,12 +1,20 @@
 package com.atwice291.btcarguard
 
+import android.app.Activity
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.CompoundButton
+import android.widget.RadioGroup
+import android.widget.Switch
+import androidx.cardview.widget.CardView
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.newFixedThreadPoolContext
 
 class ProgramActivity : AppCompatActivity() {
 
@@ -27,6 +35,10 @@ class ProgramActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+
+    }
+
+    fun swAutoBlockOnCheckedChangeListener() {
 
     }
 }
