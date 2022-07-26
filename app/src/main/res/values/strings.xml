@@ -10,4 +10,8 @@
     <string name="preference_file_key">btCarGuard</string>
     <string name="swAutoBlockIsChecked">swAutoBlockIsChecked</string>
     <string name="sbAutoBlockLevel">sbAutoBlockLevel</string>
+    <string name="bluetoothDisabled">Bluetooth выключен</string>
+    <string name="bluetoothEnabled">Bluetooth включен</string>
+    <string name="enable">ВКЛЮЧИТЬ</string>
+    <string name="scan">СКАНИРОВАТЬ</string>
 </resources>
